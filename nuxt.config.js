@@ -11,6 +11,8 @@ export default {
    generate: {
     fallback: "404.html"
   },
+  parsePages: true,
+
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
