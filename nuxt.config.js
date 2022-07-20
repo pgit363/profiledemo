@@ -3,7 +3,6 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-  target: 'static',
 
    router: {
       base: '/pgit363/profiledemo/'
@@ -11,8 +10,8 @@ export default {
    generate: {
     fallback: "404.html"
   },
-  parsePages: true,
 
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
