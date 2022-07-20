@@ -9,7 +9,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "predeploy": "nuxt generate",
-    "deploy": "gh-pages -d dist --dotfiles"
+    "deploy": "gh-pages -d dist -t true"
   },
   "dependencies": {
     "@mdi/js": "^6.9.96",
