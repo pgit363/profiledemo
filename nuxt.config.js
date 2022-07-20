@@ -7,9 +7,7 @@ export default {
    router: {
       base: '/pgit363/profiledemo/'
    },
-   generate: {
-    fallback: "404.html"
-  },
+
 
   target: 'static',
 
