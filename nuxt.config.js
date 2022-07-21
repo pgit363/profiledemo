@@ -5,7 +5,7 @@ export default {
   ssr: false,
 
    router: {
-      base: '/pgit363/profiledemo/'
+      base: '/profiledemo/'
    },
 
 
