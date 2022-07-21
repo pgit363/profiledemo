@@ -13,8 +13,8 @@
     <Blogs id="blogs"/>
     <v-divider></v-divider>
     <Projects id="projects"/>
-     <v-divider></v-divider>
-    <Contact id="contact"/>
+     <!-- <v-divider></v-divider> -->
+    <!-- <Contact id="contact"/> -->
     <v-divider></v-divider>
     <Maps id="maps"/>
   </div>

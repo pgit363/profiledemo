@@ -1,19 +1,37 @@
 <template>
 <div>
-    <v-img src="/images/bg-1.jpg">
+    <v-img src="https://pranavkamble.in/img/portfolio/bg-1.jpg">
         <v-row class="pa-5" no-gutters>
             <v-col v-for="(item, i) in experience" :key="i" cols="6" md="4">
                 <!-- <v-card class="pa-2" outlined tile> .col-6 .col-md-4 </v-card> -->
-                <v-card rounded  class="mx-auto pa-2 mt-5" height="400" max-width="344">
-                    <v-img  :src="item.icon" height="200px"></v-img>
+                <v-card rounded class="mx-auto pa-2 mt-5" max-width="344">
+                    <v-img :src="item.icon" height="200px"></v-img>
 
                     <v-card-title>
                         {{item.title}}
                     </v-card-title>
 
-                    <v-card-subtitle>
-                        {{item.description}}
-                    </v-card-subtitle>
+                    <v-card-actions>
+                        <v-btn @click="show = !show" color="orange lighten-2" text>
+                            Explore
+                        </v-btn>
+
+                        <v-spacer></v-spacer>
+
+                        <v-btn icon @click="show = !show">
+                            <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                        </v-btn>
+                    </v-card-actions>
+
+                    <v-expand-transition>
+                        <div v-show="show">
+                            <v-divider></v-divider>
+
+                            <v-card-text>
+                                {{item.description}}
+                            </v-card-text>
+                        </div>
+                    </v-expand-transition>
                 </v-card>
             </v-col>
         </v-row>
@@ -25,12 +43,12 @@
 export default {
     data() {
         return {
-           show: false,
+            show: false,
             experience: [{
                     icon: '/images/indigital.png',
                     title: 'Associate Software Engineer',
                     description: 'Working at Indigital Technologies as Associate Software Engineer. Indigital Technologies is a research based digital healthcare technology company with 3 provisional patents on our name having offices in India, USA and UAE.'
-                },                
+                },
                 {
                     icon: '/images/home.png',
                     title: ' Software Developer Intern',

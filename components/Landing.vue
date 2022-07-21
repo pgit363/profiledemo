@@ -1,5 +1,5 @@
 <template>
-<v-img height="100vh" src="/images/bgcar.jpg">
+<v-img height="100vh" src="https://pranavkamble.in/img/portfolio/bgcar.jpg">
 </v-img>
 </template>
 

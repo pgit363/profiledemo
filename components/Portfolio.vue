@@ -1,26 +1,26 @@
 <template>
 <div id="portfolio">
-        <v-img src="/images/bg-3.jpg">
+    <v-img src="https://pranavkamble.in/img/portfolio/bg-3.jpg">
 
-    <v-row class="pa-5" no-gutters>
-        <v-tabs color="deep-purple accent-4" right align-with-title>
-            <v-tab>All</v-tab>
-            <v-tab>Admin Panel</v-tab>
-            <v-tab>Websites</v-tab>
-            <v-tab>Apps</v-tab>
+        <v-row class="pa-5" no-gutters>
+            <v-tabs color="deep-purple accent-4" right align-with-title>
+                <v-tab>All</v-tab>
+                <v-tab>Admin Panel</v-tab>
+                <v-tab>Websites</v-tab>
+                <v-tab>Apps</v-tab>
 
-            <v-tab-item v-for="n in 4" :key="n">
-                <v-container fluid>
-                    <v-row>
-                        <v-col v-for="i in 6" :key="i" cols="12" md="4">
-                            <v-img max-width="256" max-heigth="256" src="https://pranavkamble.in/img/projects/T-1.PNG" lazy-src="https://pranavkamble.in/img/projects/T-1.PNG" ></v-img>
-                        </v-col>    
-                    </v-row>
-                </v-container>
-            </v-tab-item>
-        </v-tabs>
-    </v-row>
-        </v-img>
+                <v-tab-item v-for="n in 4" :key="n">
+                    <v-container fluid>
+                        <v-row>
+                            <v-col v-for="i in 6" :key="i" cols="12" md="4">
+                                <v-img max-width="256" max-heigth="256" src="https://pranavkamble.in/img/projects/T-1.PNG" lazy-src="https://pranavkamble.in/img/projects/T-1.PNG"></v-img>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </v-tab-item>
+            </v-tabs>
+        </v-row>
+    </v-img>
 </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     data() {
         return {
             show: false,
-             skills: [{
+            skills: [{
                     icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
                     title: 'Laravel',
                     proficiency: '90%'

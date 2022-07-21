@@ -3,7 +3,6 @@
     <v-img src="/images/bgcar.jpg">
         <v-row class="pa-5" no-gutters>
             <v-col v-for="n in 4" :key="n" cols="8" md="4" sm="4">
-                <!-- <v-card class="pa-2" outlined tile> .col-6 .col-md-4 </v-card> -->
                 <v-card class="mx-auto pa-2 mt-5 justify-center" max-width="330">
                     <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"></v-img>
 

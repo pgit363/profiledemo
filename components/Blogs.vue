@@ -1,6 +1,6 @@
 <template>
 <div id="blogs">
-    <v-img src="/images/bg-stats.jpg">
+    <v-img src="https://pranavkamble.in/img/portfolio/bg-stats.jpg">
         <v-row class="pa-5" no-gutters>
             <v-col v-for="(item, i) in items" :key="i" router exact cols="8" md="4" sm="4">
                 <!-- <v-card class="pa-2" outlined tile> .col-6 .col-md-4 </v-card> -->
