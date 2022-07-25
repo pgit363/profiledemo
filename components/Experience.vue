@@ -45,17 +45,17 @@ export default {
         return {
             show: false,
             experience: [{
-                    icon: '/images/indigital.png',
+                    icon: 'https://pranavkamble.in/img/portfolio/indigital.png',
                     title: 'Associate Software Engineer',
                     description: 'Working at Indigital Technologies as Associate Software Engineer. Indigital Technologies is a research based digital healthcare technology company with 3 provisional patents on our name having offices in India, USA and UAE.'
                 },
                 {
-                    icon: '/images/home.png',
+                    icon: 'https://pranavkamble.in/img/portfolio/home.png',
                     title: ' Software Developer Intern',
                     description: 'Hands on experience on LMS & E-Leraning website which is developed in HTML, CSS, JAVASCRIPT, PHP. Worked as a part of team of 3 members and added some security features in existing website.'
                 },
                 {
-                    icon: '/images/freelance.jpg',
+                    icon: 'https://pranavkamble.in/img/portfolio/freelance.jpg',
                     title: 'Freelancer',
                     description: 'Freelance for various companies like E-commerce Tender Alerts Web Application for BSSP technology, Nashik. Also static profile websites for Global Arey trending Comppany.'
                 },
