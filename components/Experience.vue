@@ -1,8 +1,8 @@
 <template>
 <div>
-    <v-img src="https://pranavkamble.in/img/portfolio/bg-1.jpg">
+    <v-img src="/images/bg/bg-1.jpg">
         <v-row class="pa-5" no-gutters>
-            <v-col v-for="(item, i) in experience" :key="i" cols="6" md="4">
+            <v-col v-for="(item, i) in experience" :key="i" cols="12" md="4">
                 <!-- <v-card class="pa-2" outlined tile> .col-6 .col-md-4 </v-card> -->
                 <v-card rounded class="mx-auto pa-2 mt-5" max-width="344">
                     <v-img :src="item.icon" height="200px"></v-img>

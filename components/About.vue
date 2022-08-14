@@ -1,6 +1,6 @@
 <template>
 <div>
-    <v-img src="https://pranavkamble.in/img/portfolio/bgcar.jpg">
+    <v-img src="/images/bg/bgcar.jpg">
         <v-row class="pa-5" no-gutters>
             <v-col v-for="n in 4" :key="n" cols="8" md="4" sm="4">
                 <!-- <v-card class="pa-2" outlined tile> .col-6 .col-md-4 </v-card> -->
@@ -86,7 +86,7 @@ export default {
                 {
                     icon: 'mdi-chart-bubble',
                     title: 'Hire Me',
-                    to: '/hireme'
+                    to: 'https://drive.google.com/file/d/1cNmmllbMjCroG7LIOaJMNmq146tjjkvD/view?usp=sharing'
                 }
             ],
         };

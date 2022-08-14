@@ -1,6 +1,6 @@
 <template>
 <div>
-    <v-img src="/images/bgcar.jpg">
+    <v-img src="/images/bg/bgcar.jpg">
         <v-row>
             <v-col md="8">
 col1

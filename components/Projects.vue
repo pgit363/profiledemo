@@ -9,7 +9,7 @@
                 <v-card-text class="white text--primary">    
                     <p>{{item.description}}</p>
                     <v-btn :color="item.color" class="mx-0" outlined>
-                        Button
+                        <a target="_blank" :href="item.link">{{item.title}}</a>
                     </v-btn>
                 </v-card-text>
             </v-card>
@@ -27,7 +27,7 @@ export default {
                     color: 'purple darken-1',
                     icon: 'mdi-star',
                     title: 'Tender Alerts India',
-                    link: 'tenderalertsindia.com',
+                    link: 'https://tenderalertsindia.com',
                     type: 'Dynamic',
                     client: 'B S S P TECHNOLOGY AND CORPORATE SERVICES PRIVATE LIMITED',
                     technology: 'React Js, PHP Laravel',
@@ -37,7 +37,7 @@ export default {
                     color: 'green lighten-1',
                     icon: 'mdi-book-variant',
                     title: 'Global Arey Trading Comopany',
-                    link: 'globalarey.in',
+                    link: 'https://globalarey.in',
                     type: 'Static profile',
                     client: 'Global Arey Trading Comopany PVT LTD',
                     technology: 'HTML, CSS, JavaScript',
@@ -47,7 +47,7 @@ export default {
                     color: 'red lighten-2',
                     icon: 'mdi-airballoon',
                     title: 'Universal Fluid Technologies',
-                    link: 'universalfluid.com',
+                    link: 'https://universalfluid.in',
                     type: 'Static profile',
                     client: 'Universal Fluid Technologies PVT LTD',
                     technology: 'HTML, CSS, JavaScript',

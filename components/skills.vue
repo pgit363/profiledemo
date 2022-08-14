@@ -1,12 +1,12 @@
 <template>
 <div>
-    <v-img src="https://pranavkamble.in/img/portfolio/bg-3.jpg">
+    <v-img src="/images/bg/bg-3.jpg">
         <v-container class="lighten-5">
             <v-row no-gutters>
                 <template v-for="(item, i) in skills">
                     <v-col class="pa-3" :key="i">
-                        <v-card height="230" max-width="344" class="pa-2 lighten-2 fill-height d-flex flex-column justify-center align-center" outlined tile>
-                            <div class="skill-item">
+                        <v-card  max-width="344" class="pa-2 lighten-2 fill-height d-flex flex-column justify-center align-center" outlined tile>
+                            <div class="skill-item text-center">
                                 <v-img width="100" :src="item.icon"></v-img>
                                 <v-card-text>
                                     <h2><span class="counter">{{item.proficiency}}</span></h2>

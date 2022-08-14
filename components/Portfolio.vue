@@ -1,6 +1,6 @@
 <template>
 <div id="portfolio">
-    <v-img src="https://pranavkamble.in/img/portfolio/bg-3.jpg">
+    <v-img src="/images/bg/bg-3.jpg">
 
         <v-row class="pa-5" no-gutters>
             <v-tabs color="deep-purple accent-4" right align-with-title>
@@ -9,11 +9,39 @@
                 <v-tab>Websites</v-tab>
                 <v-tab>Apps</v-tab>
 
-                <v-tab-item v-for="n in 4" :key="n">
+                <v-tab-item>
                     <v-container fluid>
                         <v-row>
-                            <v-col v-for="i in 6" :key="i" cols="12" md="4">
-                                <v-img max-width="256" max-heigth="256" src="https://pranavkamble.in/img/projects/T-1.PNG" lazy-src="https://pranavkamble.in/img/projects/T-1.PNG"></v-img>
+                            <v-col v-for="(item, i) in all" :key="i" cols="12" md="4">
+                                <v-img max-width="256" max-heigth="256" :src="item.image" :lazy-src="item.icom"></v-img>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </v-tab-item>
+
+                 <v-tab-item>
+                    <v-container fluid>
+                        <v-row>
+                            <v-col v-for="(item, i) in admin" :key="i" cols="12" md="4">
+                                <v-img max-width="256" max-heigth="256" :src="item.image" :lazy-src="item.icom"></v-img>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-container fluid>
+                        <v-row>
+                            <v-col v-for="(item, i) in websites" :key="i" cols="12" md="4">
+                                <v-img max-width="256" max-heigth="256" :src="item.image" :lazy-src="item.icom"></v-img>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-container fluid>
+                        <v-row>
+                            <v-col v-for="(item, i) in apps" :key="i" cols="12" md="4">
+                                <v-img max-width="256" max-heigth="256" :src="item.image" :lazy-src="item.icom"></v-img>
                             </v-col>
                         </v-row>
                     </v-container>
@@ -29,47 +57,145 @@ export default {
     data() {
         return {
             show: false,
-            skills: [{
-                    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
+            all: [{
+                    image: '/images/admin/TA-1.PNG',
                     title: 'Laravel',
                     proficiency: '90%'
                 },
                 {
-                    icon: 'https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png',
+                    image: '/images/admin/BB-AD-1.jpeg',
                     title: 'Nuxt Js',
                     proficiency: '70%'
                 },
                 {
-                    icon: 'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png',
+                    image: '/images/admin/BB-AD-2.jpeg',
                     title: 'Node Js',
                     proficiency: '50%'
                 },
                 {
-                    icon: 'https://w7.pngwing.com/pngs/751/3/png-transparent-logo-php-html-others-text-trademark-logo-thumbnail.png',
+                    image: '/images/admin/BB-AD-3.jpeg',
                     title: 'PHP',
                     proficiency: '70%'
                 },
                 {
-                    icon: 'https://pngimg.com/uploads/mysql/mysql_PNG29.png',
                     title: 'MySQL',
+                    image: '/images/admin/BB-AD-4.jpeg',
                     proficiency: '80%'
                 },
                 {
-                    icon: 'https://ih1.redbubble.net/image.2107976074.2036/st,small,845x845-pad,1000x1000,f8f8f8.jpg',
-                    title: 'AWS services',
+                    image: '/images/websites/BE-1.PNG',
+                    title: 'Laravel',
+                    proficiency: '90%'
+                },
+                {
+                    image: '/images/websites/G-1.PNG',
+                    title: 'Nuxt Js',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/websites/T-1.PNG',
+                    title: 'Node Js',
                     proficiency: '50%'
                 },
                 {
-                    icon: 'https://w7.pngwing.com/pngs/362/1/png-transparent-microsoft-visual-studio-code-alt-macos-bigsur-icon-thumbnail.png',
-                    title: 'VSCode',
-                    proficiency: ''
+                    image: '/images/websites/t.PNG',
+                    title: 'PHP',
+                    proficiency: '70%'
+                },
+            ],
+            admin: [{
+                    image: '/images/admin/TA-1.PNG',
+                    title: 'Laravel',
+                    proficiency: '90%'
                 },
                 {
-                    icon: 'https://www.nicepng.com/png/detail/776-7760129_update-native-postman-on-ubuntu-postman-tool.png',
-                    title: 'Postman',
-                    proficiency: ''
+                    image: '/images/admin/BB-AD-1.jpeg',
+                    title: 'Nuxt Js',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/admin/BB-AD-2.jpeg',
+                    title: 'Node Js',
+                    proficiency: '50%'
+                },
+                {
+                    image: '/images/admin/BB-AD-3.jpeg',
+                    title: 'PHP',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/admin/BB-AD-4.jpeg',
+                    title: 'MySQL',
+                    proficiency: '80%'
+                },
+            ],
+             websites: [{
+                    image: '/images/websites/BE-1.PNG',
+                    title: 'Laravel',
+                    proficiency: '90%'
+                },
+                {
+                    image: '/images/websites/G-1.PNG',
+                    title: 'Nuxt Js',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/websites/T-1.PNG',
+                    title: 'Node Js',
+                    proficiency: '50%'
+                },
+                {
+                    image: '/images/websites/t.PNG',
+                    title: 'PHP',
+                    proficiency: '70%'
                 }
             ],
+            apps: [{
+                    image: '/images/app/App-1.jpeg',
+                    title: 'Laravel',
+                    proficiency: '90%'
+                },
+                {
+                    image: '/images/app/App-2.jpeg',
+                    title: 'Nuxt Js',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/app/App-3.jpeg',
+                    title: 'Node Js',
+                    proficiency: '50%'
+                },
+                {
+                    image: '/images/app/App-4.jpeg',
+                    title: 'PHP',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/app/App-5.jpeg',
+                    title: 'Laravel',
+                    proficiency: '90%'
+                },
+                {
+                    image: '/images/app/App-6.jpeg',
+                    title: 'Nuxt Js',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/app/App-3.jpeg',
+                    title: 'Node Js',
+                    proficiency: '50%'
+                },
+                {
+                    image: '/images/app/App-7.jpeg',
+                    title: 'PHP',
+                    proficiency: '70%'
+                },
+                {
+                    image: '/images/app/App-8.jpeg',
+                    title: 'PHP',
+                    proficiency: '70%'
+                }
+            ]
         };
     },
 };

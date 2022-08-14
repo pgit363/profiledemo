@@ -1,8 +1,8 @@
 <template>
-<v-img height="100vh" src="https://pranavkamble.in/img/portfolio/bgcar.jpg">
+<v-img height="100vh" src="/images/bg/bgcar.jpg">
     <v-card class="bg pa-2" height="100vh">
-        <v-card-title class="mb-0" style="margin-top: 22%; font-size: 80px">Pranav
-            <span class="text-primary">Kamble</span>
+        <v-card-title class="mb-0" style="margin-top: 22%; font-size: 80px">
+           <span>Pranav<span class="text-primary">Kamble</span></span>
         </v-card-title>
         <v-card-subtitle class="heading mb-5" style="margin-top: 2%; font-size: 20px">
             SOFTWARE ENGINEER.
@@ -11,7 +11,7 @@
             of action during projects to help the management in every possible way.
         </v-card-text>
         <v-card-actions class="justify-start">
-            <v-btn v-for="(social, i) in socials" :key="i" :color="social.color" class="white--text" fab icon large>
+            <v-btn v-for="(social, i) in socials"  :key="i" :color="social.color" class="white--text" fab icon large>
                 <v-icon>{{ social.icon }}</v-icon>
             </v-btn>
         </v-card-actions>
@@ -36,6 +36,7 @@ export default {
             socials: [{
                     icon: 'mdi-facebook',
                     color: 'indigo',
+                    link: "https://google.com"
                 },
                 {
                     icon: 'mdi-linkedin',
